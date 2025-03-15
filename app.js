@@ -28,3 +28,19 @@ function actualizarLista() {
 
     }
 }
+
+function sortearAmigo() {
+    if (listaAmigos.length === "") {
+        alert ("No hay nombres en la lista de amigos. Ingresa al menos 2 nombres.")
+
+    }  else {
+            const indiceAleatorio = Math.floor(Math.random() * listaAmigos.length);
+            const amigoSorteado = listaAmigos[indiceAleatorio];
+            const ulResultado = document.getElementById(resultado);
+            ulResultado.innerHTML = "";                             //Limpia la lista
+
+            const li = document.getElementById("li");
+            li.textContent = ´El amigo sorteado es: ${amigoSorteado}´;
+            ulResultado.appendChild(li);
+    }
+}
