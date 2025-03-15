@@ -20,27 +20,27 @@ function agregarAmigo() {
 }
 
 function actualizarLista() {
-    const ulListaAmigos = documen.getElementById("listaAmigos");
+    const ulListaAmigos = document.getElementById("listaAmigos");
     ulListaAmigos.innerHTML = "";                               //Limpia la lista
 
     for (let i=0; i<listaAmigos.length; i++) {                  //Contador
         const li=document.createElement("li");
-
+        li.textContent = `${i+1}. ${listaAmigos[i]}`;           //Muestra nuestra lista de nombres
+        ulListaAmigos.appendChild(li);
     }
 }
 
 function sortearAmigo() {
-    if (listaAmigos.length === "") {
-        alert ("No hay nombres en la lista de amigos. Ingresa al menos 2 nombres.")
-
-    }  else {
+    if (listaAmigos.length === 0) {
+        alert ("Por favor, ingresa al menos 2 nombres");
+        return;
+    }
             const indiceAleatorio = Math.floor(Math.random() * listaAmigos.length);
             const amigoSorteado = listaAmigos[indiceAleatorio];
-            const ulResultado = document.getElementById(resultado);
+            const ulResultado = document.getElementById("resultado");
             ulResultado.innerHTML = "";                             //Limpia la lista
 
-            const li = document.getElementById("li");
-            li.textContent = ´El amigo sorteado es: ${amigoSorteado}´;
+            const li = document.createElement("li");
+            li.textContent = `El amigo sorteado es: ${amigoSorteado}`;
             ulResultado.appendChild(li);
-    }
 }
