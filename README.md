@@ -30,3 +30,12 @@ a una persona al azar de manera divertida y dinámica.</p>
 
 <h2>¡Prueba el Juego!</h2>
 <p>Ve al archivo principal y abre el juego en tu navegador para disfrutar de un sorteo al azar.</p>
+
+<h2>Imagenes del juego</h2>
+<h3>Versión 1 del juego</h3>
+
+<p> Pantalla inicial en el navegador </p>
+<img src="assets/Pantalla-principal-amigo-secreto.PNG" alt="Muestra la pantalla de incio que aparece en el navegador">
+
+<p> Pantalla demostrando el aspecto de el listado y el resultado del sorteo. </p>
+<img src="assets/Ejemplo-de-juego-realizado.png" alt="Muestra la pantalla un ejemplo de como se vería una lista de nombres y el resultado del sorteo">
