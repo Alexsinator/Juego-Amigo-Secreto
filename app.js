@@ -53,7 +53,7 @@ function sortearAmigo() {
             ulResultado.innerHTML = "";                             //Limpia la lista
 
             const li = document.createElement("li");
-            li.textContent = `El amigo sorteado es: ${amigoSorteado}`;
+            li.textContent = `🎉El amigo sorteado es: ${amigoSorteado}🎉`;
             ulResultado.appendChild(li);
 }
 
