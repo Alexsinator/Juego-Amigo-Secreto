@@ -83,3 +83,21 @@ function ocultarMensaje() {
     const mensajeDiv = document.getElementById("mensaje");
     mensajeDiv.style.display = "none";
 }
+
+const botonAyuda = document.getElementById("botonAyuda");
+const modalAyuda = document.getElementById("modalAyuda");
+const cerrarModal = document.getElementById("cerrarModal");
+
+botonAyuda.addEventListener("click", () => {
+    modalAyuda.style.display = "flex";
+});
+
+cerrarModal.addEventListener("click", () => {
+    modalAyuda.style.display = "none";
+});
+
+window.addEventListener("click", (event) => {
+    if(event.target === modalAyuda) {
+        modalAyuda.style.display="none";
+    }
+});
